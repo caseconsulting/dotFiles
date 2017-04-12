@@ -1,0 +1,12 @@
+angularjs@0.4.0
+atom-beautify@0.29.17
+atom-jasmine@0.8.1
+git-plus@7.0.7
+jshint@1.8.6
+last-cursor-position@0.9.0
+linter@1.11.18
+pigments@0.37.0
+platformio-ide-terminal@2.4.0
+split-diff@1.1.0
+
+

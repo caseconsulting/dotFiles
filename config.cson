@@ -1,0 +1,32 @@
+"*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+      default_beautifier: "Pretty Diff"
+    general:
+      _analyticsUserId: "714bfb5b-8333-4fe6-b376-42f97837c02f"
+    html:
+      beautify_on_save: true
+    js:
+      beautify_on_save: true
+    json:
+      beautify_on_save: true
+  core:
+    telemetryConsent: "no"
+  editor:
+    fontSize: 20
+  "exception-reporting":
+    userId: "7a87c821-25e3-9099-022a-91d4a1b0c1be"
+  "git-plus":
+    general:
+      _analyticsUserId: "dbd5fef5-7af9-4a92-bdcc-c73cc3108628"
+  "neon-cursor":
+    cursorType: "box"
+  pigments:
+    markerType: "native-dot"
+  "terminal-plus":
+    core: {}
+    toggles:
+      autoClose: true
+  welcome:
+    showOnStartup: false
