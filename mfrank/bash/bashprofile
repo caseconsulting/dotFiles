@@ -1,0 +1,23 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=/usr/lib/oracle/12.2/client64/bin
+PATH=$PATH:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export GIT_UTILITIES_BIN="~/GitHub/rkiel/git-utilities/bin"
+export NODE_UTILITIES_BIN="~/GitHub/rkiel/node-utilities/bin"
+
+export PATH=${GIT_UTILITIES_BIN}:$PATH
+export PATH=${NODE_UTILITIES_BIN}:$PATH
+
+export LD_LIBRARY_PATH=/usr/lib/oracle/12.2/client64/lib
+
+export DOT_USER=mfrank
+export FEATURE_USER=mfrank
