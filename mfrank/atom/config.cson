@@ -1,21 +1,16 @@
 "*":
   "atom-beautify":
     css:
-      beautify_on_save: true
       default_beautifier: "Pretty Diff"
       indent_size: 2
       newline_between_rules: true
       preserve_newlines: true
       selector_separator_newline: true
-    html:
-      beautify_on_save: true
+    html: {}
     js:
-      beautify_on_save: true
       end_with_newline: true
-    json:
-      beautify_on_save: true
+    json: {}
     xml:
-      beautify_on_save: true
       end_with_newline: true
       indent_size: 2
   core:
@@ -23,16 +18,19 @@
     closeEmptyWindows: false
     disabledPackages: [
       "atom-beautify"
+      "linter-jshint"
     ]
     projectHome: "/home/centos/projects"
     telemetryConsent: "no"
+    uriHandlerRegistration: "always"
   editor:
-    fontSize: 16
+    fontSize: 18
     preferredLineLength: 120
     showInvisibles: true
   "exception-reporting":
     userId: "625c5d00-e837-4361-960d-a5d67bef1472"
-  "linter-ui-default": {}
+  "linter-ui-default":
+    showPanel: true
   pigments:
     markerType: "native-dot"
   "prettier-atom":
