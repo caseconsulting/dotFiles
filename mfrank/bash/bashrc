@@ -25,8 +25,11 @@ alias karma="npm run karma:start"
 alias status="git status; echo; echo STASH:; git stash list; echo"
 alias watch="npm run app:watch"
 
+alias killnode="taskkill -F -IM node.exe"
+
+alias api="cd ~/projects/expense-app-api"
 alias dot="cd ~/projects/dotFiles"
-alias ea="cd ~/projects/expense-app"
+alias ea="cd ~/projects/vue-expense-app"
 
 # ----------
 # Git Aliases

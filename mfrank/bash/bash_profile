@@ -7,9 +7,11 @@ fi
 
 # User specific environment and startup programs
 
-PATH=/usr/lib/oracle/12.2/client64/bin
+PATH=$PATH:/usr/lib/oracle/12.2/client64/bin
 PATH=$PATH:/bin:/usr/bin:/usr/local/bin:/usr/local/sbin:/usr/sbin
 PATH=$PATH:$HOME/.local/bin:$HOME/bin
+PATH=$PATH:"/c/Program Files/nodejs":"/c/Users/mfran/AppData/Local/atom/bin"
+PATH=$PATH:"/c/Ruby24-x64/bin"
 
 export GIT_UTILITIES_BIN="~/GitHub/rkiel/git-utilities/bin"
 export NODE_UTILITIES_BIN="~/GitHub/rkiel/node-utilities/bin"
