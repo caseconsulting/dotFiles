@@ -1,0 +1,22 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# added by ~/GitHub/rkiel/git-utilities/install/bin/setup
+export GIT_UTILITIES_BIN="~/GitHub/rkiel/git-utilities/bin"
+export PATH=${GIT_UTILITIES_BIN}:$PATH
+source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
+source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
+export FEATURE_USER=zramsis
+export PS1='[\[\e[0;35m\]\u@\h\[\e[0m\] \[\e[1;34m\]\W\[\e[0;32m\]$(__git_ps1 " %s")\[\e[0m\]]\$ '
+#export PS1="\[\033[38;5;33m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]$(__git_ps1 " %s") \W >\[$(tput sgr0)\]"
+
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+alias ll='ls -la'
+alias gs='git status'

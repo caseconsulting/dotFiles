@@ -24,7 +24,6 @@
             <li>s = make symbolic links instead of hard links</li>
             <li>f = remove existing destination files</li>
         </ul>
-        - ln params: n=treat link as normal file, s= make symbolic link, instead of hard link, f=
     </li>
 </ul>
 
