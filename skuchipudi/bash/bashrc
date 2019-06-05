@@ -1,0 +1,9 @@
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+# added by ~/GitHub/rkiel/git-utilities/install/bin/setup
+source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
+
