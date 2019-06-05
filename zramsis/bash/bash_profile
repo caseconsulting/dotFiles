@@ -1,3 +1,9 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
 
 # added by ~/GitHub/rkiel/git-utilities/install/bin/setup
 export GIT_UTILITIES_BIN="~/GitHub/rkiel/git-utilities/bin"
