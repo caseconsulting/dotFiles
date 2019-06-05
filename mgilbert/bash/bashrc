@@ -1,7 +1,6 @@
-
-# Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-        . ~/.bashrc
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
 fi
 
 # added by ~/GitHub/rkiel/git-utilities/install/bin/setup
