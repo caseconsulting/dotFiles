@@ -1,0 +1,23 @@
+{
+  "atomKeymap.promptV3Features": true,
+  "aws.profile": "default",
+  "aws.recentCredentials": ["default"],
+  "aws.region": ["us-east-1"],
+  "aws.telemetry": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "extensions.showRecommendationsOnlyOnDemand": true,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "telemetry.enableCrashReporter": false,
+  "telemetry.enableTelemetry": false,
+  "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+  "terminal.integrated.rendererType": "dom",
+  "window.zoomLevel": 0,
+  "workbench.iconTheme": "file-icons",
+  "workbench.startupEditor": "newUntitledFile"
+}
