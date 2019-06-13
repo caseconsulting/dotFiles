@@ -31,6 +31,7 @@ alias api="cd ~/projects/expense-app-api"
 alias aw="cd ~/projects/app-website"
 alias dot="cd ~/projects/dotFiles"
 alias ea="cd ~/projects/vue-expense-app"
+alias eapi="cd ~/projects/expense-app-api"
 alias website="cd ~/projects/website"
 alias wapi="cd ~/projects/website-api"
 
