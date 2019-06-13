@@ -28,8 +28,11 @@ alias watch="npm run app:watch"
 alias killnode="taskkill -F -IM node.exe"
 
 alias api="cd ~/projects/expense-app-api"
+alias aw="cd ~/projects/app-website"
 alias dot="cd ~/projects/dotFiles"
 alias ea="cd ~/projects/vue-expense-app"
+alias website="cd ~/projects/website"
+alias wapi="cd ~/projects/website-api"
 
 # ----------
 # Git Aliases
