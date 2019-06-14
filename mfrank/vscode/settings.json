@@ -4,12 +4,12 @@
   "aws.recentCredentials": ["default"],
   "aws.region": ["us-east-1"],
   "aws.telemetry": false,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
-  "editor.multiCursorModifier": "ctrlCmd",
+  "breadcrumbs.enabled": true, 
+  "editor.fontSize": 16, 
+  "editor.formatOnSave": true, 
+  "editor.multiCursorModifier": "ctrlCmd", 
+  "editor.tabSize": 2, 
+  "extensions.ignoreRecommendations": true, 
   "extensions.showRecommendationsOnlyOnDemand": true,
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
@@ -19,5 +19,15 @@
   "terminal.integrated.rendererType": "dom",
   "window.zoomLevel": 0,
   "workbench.iconTheme": "file-icons",
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "[html]": { 
+    "editor.defaultFormatter": "esbenp.prettier-vscode" 
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  , 
+  "[json]": { 
+    "editor.defaultFormatter": "esbenp.prettier-vscode" 
+  }
 }
