@@ -26,6 +26,7 @@ alias status="git status; echo; echo STASH:; git stash list; echo"
 alias watch="npm run app:watch"
 
 alias killnode="taskkill -F -IM node.exe"
+alias sam="'/c/Program Files/Amazon/AWSSAMCLI/bin/sam.cmd'"
 
 alias api="cd ~/projects/expense-app-api"
 alias aw="cd ~/projects/app-website"
