@@ -1,0 +1,20 @@
+[user]
+	name = Bryan Washam
+	email = bryanwasham@hotmail.com
+[alias]
+	br = branch
+	ci = commit
+	co = checkout
+	ec = config --global -e
+	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+	last = log -1 HEAD
+	st = status
+[color]
+	ui = auto
+[push]
+	default = simple
+[core]
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
