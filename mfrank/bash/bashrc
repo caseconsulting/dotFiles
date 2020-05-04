@@ -13,6 +13,7 @@ fi
 source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
 source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
 source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
+source ~/GitHub/rkiel/node-utilities/dotfiles/bashrc
 
 export PS1='[\[\e[0;35m\]\u@\h\[\e[0m\] \[\e[1;34m\]\W\[\e[0;32m\]$(__git_ps1 " %s")\[\e[0m\]]\$ '
 
@@ -36,7 +37,7 @@ alias eapi="cd ~/projects/expense-app-api"
 alias gifbot="cd ~/projects/lambda-gifbot"
 alias insultbot="cd ~/projects/lambda-insultbot"
 alias mysterio="cd ~/projects/mysterio"
-alias website="cd ~/projects/wpp-website"
+alias website="cd ~/projects/app-website"
 alias wapi="cd ~/projects/website-api"
 
 # ----------
