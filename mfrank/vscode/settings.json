@@ -1,6 +1,6 @@
 {
   "atomKeymap.promptV3Features": true,
-  "aws.profile": "default",
+  "aws.profile": "profile:default",
   "aws.recentCredentials": ["default"],
   "aws.region": ["us-east-1"],
   "aws.telemetry": false,
@@ -28,5 +28,7 @@
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "aws.samcli.location": "/home/linuxbrew/.linuxbrew/bin/sam",
+  "gitlens.advanced.telemetry.enabled": false
 }
