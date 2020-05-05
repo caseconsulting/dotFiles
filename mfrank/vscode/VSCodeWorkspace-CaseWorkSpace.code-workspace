@@ -1,19 +1,28 @@
 {
   "folders": [
-	{
-		"path": "../../../expense-app-api"
-	},
-	{
-		"path": "../../../vue-expense-app"
-	},
-	{
-		"path": "../../../website-api"
-	},
-	{
-		"path": "../../../app-website"
-	},
-	{
-		"path": "../.."
-	}
-]
+    {
+      "path": "../../../expense-app-api"
+    },
+    {
+      "path": "../../../vue-expense-app"
+    },
+    {
+      "path": "../../../website-api"
+    },
+    {
+      "path": "../../../app-website"
+    },
+    {
+      "path": "../../../mysterio"
+    },
+    {
+      "path": "../../../lambda-gifbot"
+    },
+    {
+      "path": "../../../lambda-insultbot"
+    },
+    {
+      "path": "../../../dotFiles"
+    }
+  ]
 }
