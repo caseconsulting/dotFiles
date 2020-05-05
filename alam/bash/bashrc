@@ -19,13 +19,3 @@ source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
 # added by ~/GitHub/rkiel/node-utilities/install/bin/setup
 source ~/GitHub/rkiel/node-utilities/dotfiles/bashrc
 
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@12/bin:$PATH"
-
-# added by ~/GitHub/rkiel/git-utilities/install/bin/setup
-source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
-
-
-# added by ~/GitHub/rkiel/node-utilities/install/bin/setup
-source ~/GitHub/rkiel/node-utilities/dotfiles/bashrc
-
