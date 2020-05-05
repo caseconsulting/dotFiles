@@ -1,9 +1,9 @@
 code --install-extension alexdima.copy-relative-path
 code --install-extension amazonwebservices.aws-toolkit-vscode
 code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension dbaeumer.jshint
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
-code --install-extension eg2.vscode-npm-script
 code --install-extension esbenp.prettier-vscode
 code --install-extension file-icons.file-icons
 code --install-extension formulahendry.auto-close-tag
@@ -12,6 +12,7 @@ code --install-extension johnpapa.vscode-peacock
 code --install-extension karigari.chat
 code --install-extension ms-vscode.atom-keybindings
 code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension ms-vsliveshare.vsliveshare-audio
 code --install-extension ms-vsliveshare.vsliveshare-pack
 code --install-extension msjsdiag.debugger-for-chrome
 code --install-extension octref.vetur
