@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../../../app-website"
+		},
+		{
+			"path": "../../../website-api"
+		},
+		{
+			"path": "../../../vue-expense-app"
+		},
+		{
+			"path": "../../../expense-app-api"
+		},
+		{
+			"path": "../.."
+		}
+	]
+}
