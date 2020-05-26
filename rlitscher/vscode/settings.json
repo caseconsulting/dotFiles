@@ -1,6 +1,0 @@
-{
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
-    "aws.telemetry": false,
-    "gitlens.advanced.telemetry.enabled": false
-}
