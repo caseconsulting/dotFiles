@@ -5,13 +5,6 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-# Uncomment the following line if you don't like systemctl's auto-paging feature:
-# export SYSTEMD_PAGER=
-
-# User specific aliases and functions
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@12/bin:$PATH"
-
 # added by ~/GitHub/rkiel/git-utilities/install/bin/setup
 source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
 
