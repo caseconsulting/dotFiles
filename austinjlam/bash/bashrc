@@ -26,6 +26,3 @@ source ~/GitHub/rkiel/node-utilities/dotfiles/bashrc
 # moved from .bash_profile
 source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
 source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
-
-
-
