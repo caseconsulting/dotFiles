@@ -1,7 +1,7 @@
 # .bash_profile
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
+if [[ -z $PS1 && -f ~/.bashrc ]]; then # If PS1 is not defined, then we'll source ~/.bashrc
 	. ~/.bashrc
 fi
 
