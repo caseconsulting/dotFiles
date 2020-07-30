@@ -1,0 +1,29 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+if [[ $- == *i* ]]; then # We are in an interactive shell
+	! shopt -q login_shell && [ -f ~/.bash_profile ] && source ~/.bash_profile
+fi
+
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@12/bin:$PATH"
+
+# added by ~/GitHub/rkiel/git-utilities/install/bin/setup
+source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
+
+
+# added by ~/GitHub/rkiel/node-utilities/install/bin/setup
+source ~/GitHub/rkiel/node-utilities/dotfiles/bashrc
+
+# added by ~/GitHub/rkiel/node-utilities/install/bin/setup
+export NODE_UTILITIES_BIN="~/GitHub/rkiel/node-utilities/bin"
+export PATH=${NODE_UTILITIES_BIN}:$PATH
