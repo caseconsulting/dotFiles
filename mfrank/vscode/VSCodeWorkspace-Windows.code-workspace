@@ -1,28 +1,43 @@
 {
   "folders": [
     {
-      "path": "C:\\Users\\mfran\\projects\\vue-expense-app"
+      "path": "..\\..\\..\\vue-expense-app"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\expense-app-api"
+      "path": "..\\..\\..\\expense-app-api"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\app-website"
+      "path": "..\\..\\..\\app-website"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\website-api"
+      "path": "..\\..\\..\\website-api"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\mysterio"
+      "path": "..\\..\\..\\mysterio"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\lambda-gifbot"
+      "path": "..\\..\\..\\app-delphi"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\lambda-insultbot"
+      "path": "..\\..\\..\\delphi-api"
     },
     {
-      "path": "C:\\Users\\mfran\\projects\\dotFiles"
+      "path": "..\\..\\..\\app-pythia"
+    },
+    {
+      "path": "..\\..\\..\\pythia-api"
+    },
+    {
+      "path": "..\\..\\..\\delphi-pythia"
+    },
+    {
+      "path": "..\\..\\..\\lambda-gifbot"
+    },
+    {
+      "path": "..\\..\\..\\lambda-insultbot"
+    },
+    {
+      "path": "..\\..\\..\\dotFiles"
     }
   ],
   "settings": {}
