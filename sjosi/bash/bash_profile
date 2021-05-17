@@ -1,0 +1,32 @@
+# .bash_profile
+
+# Get the aliases and functions
+#if [ -f ~/.bashrc ]; then
+#	. ~/.bashrc
+#fi
+
+# Get the aliases and functions
+if [[ -z $PS1 && -f ~/.bashrc ]]; then # If PS1 not defined, source ~/.bashrc
+   	. ~/.bashrc
+fi
+
+
+export PS1='[\[\e[0;35m\]\u@\h\[\e[0m\] \[\e[1;34m\]\W\[\e[0;32m\]$(__git_ps1 " %s")\[\e[0m\]]\$ '
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
+
+export FEATURE_USER=sjosi
+GIT_UTILITIES=~/GitHub/rkiel/git-utilities
+export PATH=${GIT_UTILITIES}/bin:$PATH
+source ${GIT_UTILITIES}/dotfiles/git-completion.bash
+source ${GIT_UTILITIES}/dotfiles/git-prompt.sh
+#source ${GIT_UTILITIES}/dotfiles/bash_profile
+
+NODE_UTILITIES=~/GitHub/rkiel/node-utilities
+export PATH=${NODE_UTILITIES}/bin:$PATH
