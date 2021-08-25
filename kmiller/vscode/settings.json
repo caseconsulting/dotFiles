@@ -1,0 +1,21 @@
+{
+    "[vue]": {
+        "editor.defaultFormatter": "ms-vsliveshare.vsliveshare"
+    },
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.startupEditor": "none",
+    "yaml.schemas": {
+        "file:/home/kmiller/.config/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/sam.schema.json": [
+            "template.yaml",
+            "CloudFormation.yaml"
+        ],
+        "file:///home/kmiller/.config/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/sam.schema.json": [
+            "template.yaml",
+            "CloudFormation.yaml"
+        ]
+    },
+    "redhat.telemetry.enabled": false
+}

@@ -15,3 +15,5 @@ source ${GIT_UTILITIES}/dotfiles/bashrc
 
 NODE_UTILITIES=~/GitHub/rkiel/node-utilities
 source ${NODE_UTILITIES}/dotfiles/bashrc
+# Fix bash: __git_ps1: command not found
+source /home/linuxbrew/.linuxbrew/etc/bash_completion
