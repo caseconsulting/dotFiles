@@ -2,27 +2,30 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+  . /etc/bashrc
 fi
 
 if [[ $- == *i* ]]; then # We are in an interactive shell
-	! shopt -q login_shell && [ -f ~/.bash_profile ] && source ~/.bash_profile
+  ! shopt -q login_shell && [ -f ~/.bash_profile ] && source ~/.bash_profile
 fi
 
 # Uncomment the following line if you don't like systemctl's auto-paging feature:
 # export SYSTEMD_PAGER=
 
 # User specific aliases and functions
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-export PATH="/home/linuxbrew/.linuxbrew/opt/node@12/bin:$PATH"
+PATH=$PATH:/c/Python39/
 
 # added by ~/GitHub/rkiel/git-utilities/install/bin/setup
 source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
 
 
 # added by ~/GitHub/rkiel/node-utilities/install/bin/setup
-source ~/GitHub/rkiel/node-utilities/dotfiles/bashrc
+source "C:\Users\Charles\GitHub\rkiel\git-utilities\dotfiles\bashrc"
 
 # moved from .bash_profile
 source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
 source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
+
+source ~/GitHub/rkiel/git-utilities/dotfiles/bashrc
+
+export FORCE_COLOR=true
