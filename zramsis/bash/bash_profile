@@ -1,22 +1,31 @@
 # .bash_profile
 
 # Get the aliases and functions
-if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+if [[ -z $PS1 && -f ~/.bashrc ]]; then # If PS1 is not defined, then we'll source ~/.bashrc
+  . ~/.bashrc
 fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export PATH
 
 # added by ~/GitHub/rkiel/git-utilities/install/bin/setup
 export GIT_UTILITIES_BIN="~/GitHub/rkiel/git-utilities/bin"
 export PATH=${GIT_UTILITIES_BIN}:$PATH
-source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
-source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
+# source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
+# source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
 export FEATURE_USER=zramsis
 export PS1='[\[\e[0;35m\]\u@\h\[\e[0m\] \[\e[1;34m\]\W\[\e[0;32m\]$(__git_ps1 " %s")\[\e[0m\]]\$ '
-#export PS1="\[\033[38;5;33m\]\u@\h\[$(tput sgr0)\]\[\033[38;5;15m\]$(__git_ps1 " %s") \W >\[$(tput sgr0)\]"
 
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-export PATH="/usr/local/opt/node@8/bin:$PATH"
 
-alias ll='ls -la'
-alias gs='git status'
+# added by ~/GitHub/rkiel/node-utilities/install/bin/setup
+export NODE_UTILITIES_BIN="~/GitHub/rkiel/node-utilities/bin"
+export PATH=${NODE_UTILITIES_BIN}:$PATH
+
+export FEATURE_USER=zramsis
+GIT_UTILITIES_BIN=~/GitHub/rkiel/git-utilities/bin
+source ~/GitHub/rkiel/git-utilities/dotfiles/git-completion.bash
+source ~/GitHub/rkiel/git-utilities/dotfiles/git-prompt.sh
+source ~/GitHub/rkiel/git-utilities/dotfiles/bash_profile
