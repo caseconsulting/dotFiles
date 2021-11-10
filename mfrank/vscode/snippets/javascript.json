@@ -12,122 +12,300 @@
   //  ],
   //  "description": "Log output to console"
   // }
-  "console separator": {
-    "prefix": "log*",
-    "body": ["console.log('**************************************************************');"],
-    "description": "Add a line of asterisks in the console"
-  },
-  "console.log": {
-    "prefix": "cl",
-    "body": ["console.log('$1', $1);$0"],
-    "description": "adds a console.log statement"
-  },
-  "describe": {
-    "prefix": "des",
-    "body": ["describe('$1', () => {", "\t$0", "}); // $1"],
-    "description": "Describe block"
-  },
-  "should": {
-    "prefix": "should",
-    "body": ["it('SHOULD $1', () => {", "\texpect($2.$3($4)).toEqual($5);", "});"],
-    "description": "Sets up a it block with expectation toEqual"
-  },
-  "spy": {
-    "prefix": "spy",
+  "let1": {
+    "prefix": "let1",
     "body": [
-      "beforeEach(() => $1 = jasmine.createSpy('$1').and.returnValue($2));",
-      "afterEach(() => expect($1).toHaveBeenCalledWith($3));",
-      "$0"
-    ],
-    "description": "Sets up a before and after each block creating a spy and setting up return value"
+      "beforeEach(() => ($1 = '{$1}'));",
+      "",
+      "$0;"
+    ]
   },
-  "when": {
-    "prefix": "when",
+  "let2": {
+    "prefix": "let2",
+    "body": [
+      "let $1, $2;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "let3": {
+    "prefix": "let3",
+    "body": [
+      "let $1, $2, $3;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "  $3 = '{$3}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "let4": {
+    "prefix": "let4",
+    "body": [
+      "let $1, $2, $3, $4;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "  $3 = '{$3}';",
+      "  $4 = '{$4}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "let5": {
+    "prefix": "let5",
+    "body": [
+      "let $1, $2, $3, $4, $5;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "  $3 = '{$3}';",
+      "  $4 = '{$4}';",
+      "  $5 = '{$5}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "let6": {
+    "prefix": "let6",
+    "body": [
+      "let $1, $2, $3, $4, $5, $6;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "  $3 = '{$3}';",
+      "  $4 = '{$4}';",
+      "  $5 = '{$5}';",
+      "  $6 = '{$6}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "let7": {
+    "prefix": "let7",
+    "body": [
+      "let $1, $2, $3, $4, $5, $6, $7;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "  $3 = '{$3}';",
+      "  $4 = '{$4}';",
+      "  $5 = '{$5}';",
+      "  $6 = '{$6}';",
+      "  $7 = '{$7}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "let8": {
+    "prefix": "let8",
+    "body": [
+      "let $1, $2, $3, $4, $5, $6, $7, $8;",
+      "beforeEach(() => {",
+      "  $1 = '{$1}';",
+      "  $2 = '{$2}';",
+      "  $3 = '{$3}';",
+      "  $4 = '{$4}';",
+      "  $5 = '{$5}';",
+      "  $6 = '{$6}';",
+      "  $7 = '{$7}';",
+      "  $8 = '{$8}';",
+      "});",
+      "",
+      "$0;"
+    ]
+  },
+  "aft": {
+    "prefix": "aft",
+    "body": [
+      "afterEach(() => $1);"
+    ]
+  },
+  "bef": {
+    "prefix": "bef",
+    "body": [
+      "beforeEach(() => $1);"
+    ]
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "console.log('$1', $1);",
+      "$0;"
+    ]
+  },
+  "curryflow": {
+    "prefix": "curryflow",
     "body": [
       "describe('WHEN $1', () => {",
-      "\tbeforeEach(() => spyOn($2,'$3').and.returnValue($4));",
-      "\tafterEach(() => expect($2.$3).toHaveBeenCalledWith($5));",
+      "  beforeEach(() => spyOn($2, '$3').and.returnValue('$3()'));",
+      "  afterEach(() => expect($2.$3).toHaveBeenCalledWith($4));",
       "",
-      "\t$0",
-      "});",
-      ""
+      "  $0;",
+      "});"
     ]
   },
   "curryspy": {
     "prefix": "curryspy",
     "body": [
       "describe('WHEN $1', () => {",
-      "\tlet $3;",
-      "\tbeforeEach(() => $3 = jasmine.createSpy('$3').and.returnValue($6));",
-      "\tafterEach(() => expect($3).toHaveBeenCalledWith($5));",
+      "  let $3;",
+      "  beforeEach(() => ($3 = jasmine.createSpy('$3').and.returnValue($6)));",
+      "  afterEach(() => expect($3).toHaveBeenCalledWith($5));",
       "",
-      "\tbeforeEach(() => spyOn($2,'$3').and.returnValue($3));",
-      "\tafterEach(() => expect($2.$3).toHaveBeenCalledWith($4));",
+      "  beforeEach(() => spyOn($2, '$3').and.returnValue($3));",
+      "  afterEach(() => expect($2.$3).toHaveBeenCalledWith($4));",
       "",
-      "\t$0",
+      "  $0;",
+      "});"
+    ]
+  },
+  "des": {
+    "prefix": "des",
+    "body": [
+      "describe('$1', () => {",
+      "  $0;",
+      "}); // $1"
+    ]
+  },
+  "it_should": {
+    "prefix": "it_should",
+    "body": [
+      "it('SHOULD $1', () => {",
+      "  expect($2).toEqual($3);",
+      "});"
+    ]
+  },
+  "lodash": {
+    "prefix": "lodash",
+    "body": [
+      "const _ = require('lodash');"
+    ]
+  },
+  "moment": {
+    "prefix": "moment",
+    "body": [
+      "const moment = require('moment');"
+    ]
+  },
+  "node_func": {
+    "prefix": "node_func",
+    "body": [
+      "const serverless = require('@eforms/serverless');",
+      "",
+      "let lib;",
+      "",
+      "function $1() {",
+      "  $0; // start here",
+      "}",
+      "",
+      "lib = serverless.js.methods({",
+      "  curry: {},",
+      "  normal: {",
+      "    $1",
+      "  }",
       "});",
-      ""
+      "",
+      "module.exports = lib.$1;",
+      "module.exports.lib = lib;"
     ]
   },
-  "beforeEach": {
-    "prefix": "bef",
-    "body": ["beforeEach(() => $1);"]
-  },
-  "afterEach": {
-    "prefix": "aft",
-    "body": ["afterEach(() => $1);"]
-  },
-  "it": {
-    "prefix": "it",
-    "body": ["it('SHOULD $1', () => {", "\t$2", "});"]
-  },
-  "test": {
-    "prefix": "test",
+  "obj1": {
+    "prefix": "obj1",
     "body": [
-      "/* globals $1 */",
-      "(function() {",
-      "\t'use strict';",
+      "let $1;",
+      "beforeEach(() => ($1 = {}));",
       "",
-      "\tdescribe('$1', () => {",
-      "",
-      "\t\tbeforeEach(() => {",
-      "\t\t\tbard.appModule('${2:SnippetsModuleName}');",
-      "\t\t\tbard.inject(this, '$1');",
-      "\t\t});",
-      "",
-      "\t\t$0",
-      "\t}); // $1",
-      "",
-      "})();"
+      "$0;"
     ]
   },
-  "let1": {
-    "prefix": "let1",
-    "body": ["let $1;", "", "beforeEach(() => {", "\t$1 = '{$1}';", "});$2"]
-  },
-  "let2": {
-    "prefix": "let2",
-    "body": ["let $1, $2;", "", "beforeEach(() => {", "\t$1 = '{$1}';", "\t$2 = '{$2}';", "});$3"]
-  },
-  "let3": {
-    "prefix": "let3",
-    "body": ["let $1, $2, $3;", "", "beforeEach(() => {", "\t$1 = '{$1}';", "\t$2 = '{$2}';", "\t$3 = '{$3}';", "});$4"]
-  },
-  "let4": {
-    "prefix": "let4",
+  "obj2": {
+    "prefix": "obj2",
     "body": [
-      "let $1, $2, $3, $4;",
+      "let $1, $2;",
+      "beforeEach(() => ($1 = {}));",
+      "beforeEach(() => ($2 = {}));",
       "",
-      "beforeEach(() => {",
-      "\t$1 = '{$1}';",
-      "\t$2 = '{$2}';",
-      "\t$3 = '{$3}';",
-      "\t$4 = '{$4}';",
-      "});$5"
+      "$0;"
     ]
   },
-  "spec": {
-    "prefix": "it",
-    "body": ["it('SHOULD $1', () => {", "\t$2", "});"]
+  "should": {
+    "prefix": "should",
+    "body": [
+      "it('SHOULD $1', () => {",
+      "  expect($2).toEqual($3);",
+      "});"
+    ]
+  },
+  "spy": {
+    "prefix": "spy",
+    "body": [
+      "beforeEach(() => ($1 = jasmine.createSpy('$1').and.returnValue($2)));",
+      "afterEach(() => expect($1).toHaveBeenCalledWith($3));",
+      "$0;"
+    ]
+  },
+  "state": {
+    "prefix": "state",
+    "body": [
+      "let state;",
+      "beforeEach(() => (state = {}));",
+      "",
+      "$0;"
+    ]
+  },
+  "state1": {
+    "prefix": "state1",
+    "body": [
+      "let $1, state;",
+      "beforeEach(() => ($1 = '{$1}'));",
+      "beforeEach(() => (state = { $1 }));",
+      "",
+      "$0;"
+    ]
+  },
+  "state2": {
+    "prefix": "state2",
+    "body": [
+      "let $1, $2, state;",
+      "beforeEach(() => ($1 = '{$1}'));",
+      "beforeEach(() => ($2 = '{$2}'));",
+      "beforeEach(() => (state = { $1, $2 }));",
+      "",
+      "$0;"
+    ]
+  },
+  "tryfail": {
+    "prefix": "tryfail",
+    "body": [
+      "try {",
+      "  $1;",
+      "  fail('should never get here');",
+      "} catch (e) {",
+      "  expect(e.message).toEqual('$2');",
+      "}",
+      "$0;"
+    ]
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "describe('WHEN $1', () => {",
+      "  beforeEach(() => spyOn($2, '$3').and.returnValue($4));",
+      "  afterEach(() => expect($2.$3).toHaveBeenCalledWith($5));",
+      "",
+      "  $0;",
+      "});"
+    ]
   }
 }
