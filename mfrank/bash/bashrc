@@ -21,7 +21,7 @@ alias ll="ls -la --color=auto"
 alias npml="npm list --depth=0"
 
 alias app="npm run app:start"
-alias clean="git checkout main; git pull; git remote update; git remote prune origin; git gc; git branch -a"
+alias clean="git checkout main; git checkout master; git pull; git remote update; git remote prune origin; git gc; git branch -a"
 alias karma="npm run karma:start"
 alias status="git status; echo; echo STASH:; git stash list; echo"
 alias watch="npm run app:watch"
@@ -57,7 +57,7 @@ alias gc='git commit'
 alias gcm='git commit -m'
 alias gco='git checkout'
 alias gcob='git checkout -b'
-alias gcom='git checkout main'
+alias gcom='git checkout master'
 alias gd='git diff'
 alias gl='git log'
 alias glg='git log --graph --oneline --decorate --all'
