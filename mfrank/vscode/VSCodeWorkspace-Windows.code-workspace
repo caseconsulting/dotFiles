@@ -44,6 +44,9 @@
     },
     {
       "path": "..\\..\\..\\dotFiles"
+    },
+    {
+      "path": "..\\..\\..\\scala-at-light-speed"
     }
   ],
   "settings": {
@@ -75,6 +78,9 @@
       "!Select sequence",
       "!Split",
       "!Split sequence"
-    ]
+    ],
+    "files.watcherExclude": {
+      "**/target": true
+    }
   }
 }
