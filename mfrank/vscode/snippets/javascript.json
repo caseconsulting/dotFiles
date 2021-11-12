@@ -14,23 +14,11 @@
   // }
   "let1": {
     "prefix": "let1",
-    "body": [
-      "beforeEach(() => ($1 = '{$1}'));",
-      "",
-      "$0;"
-    ]
+    "body": ["beforeEach(() => ($1 = '{$1}'));", "", "$0;"]
   },
   "let2": {
     "prefix": "let2",
-    "body": [
-      "let $1, $2;",
-      "beforeEach(() => {",
-      "  $1 = '{$1}';",
-      "  $2 = '{$2}';",
-      "});",
-      "",
-      "$0;"
-    ]
+    "body": ["let $1, $2;", "beforeEach(() => {", "  $1 = '{$1}';", "  $2 = '{$2}';", "});", "", "$0;"]
   },
   "let3": {
     "prefix": "let3",
@@ -127,22 +115,15 @@
   },
   "aft": {
     "prefix": "aft",
-    "body": [
-      "afterEach(() => $1);"
-    ]
+    "body": ["afterEach(() => $1);"]
   },
   "bef": {
     "prefix": "bef",
-    "body": [
-      "beforeEach(() => $1);"
-    ]
+    "body": ["beforeEach(() => $1);"]
   },
   "cl": {
     "prefix": "cl",
-    "body": [
-      "console.log('$1', $1);",
-      "$0;"
-    ]
+    "body": ["console.log('$1', $1);", "$0;"]
   },
   "curryflow": {
     "prefix": "curryflow",
@@ -172,31 +153,19 @@
   },
   "des": {
     "prefix": "des",
-    "body": [
-      "describe('$1', () => {",
-      "  $0;",
-      "}); // $1"
-    ]
+    "body": ["describe('$1', () => {", "  $0;", "}); // $1"]
   },
   "it_should": {
     "prefix": "it_should",
-    "body": [
-      "it('SHOULD $1', () => {",
-      "  expect($2).toEqual($3);",
-      "});"
-    ]
+    "body": ["it('SHOULD $1', () => {", "  expect($2).toEqual($3);", "});"]
   },
   "lodash": {
     "prefix": "lodash",
-    "body": [
-      "const _ = require('lodash');"
-    ]
+    "body": ["const _ = require('lodash');"]
   },
   "moment": {
     "prefix": "moment",
-    "body": [
-      "const moment = require('moment');"
-    ]
+    "body": ["const moment = require('moment');"]
   },
   "node_func": {
     "prefix": "node_func",
@@ -222,30 +191,15 @@
   },
   "obj1": {
     "prefix": "obj1",
-    "body": [
-      "let $1;",
-      "beforeEach(() => ($1 = {}));",
-      "",
-      "$0;"
-    ]
+    "body": ["let $1;", "beforeEach(() => ($1 = {}));", "", "$0;"]
   },
   "obj2": {
     "prefix": "obj2",
-    "body": [
-      "let $1, $2;",
-      "beforeEach(() => ($1 = {}));",
-      "beforeEach(() => ($2 = {}));",
-      "",
-      "$0;"
-    ]
+    "body": ["let $1, $2;", "beforeEach(() => ($1 = {}));", "beforeEach(() => ($2 = {}));", "", "$0;"]
   },
   "should": {
     "prefix": "should",
-    "body": [
-      "it('SHOULD $1', () => {",
-      "  expect($2).toEqual($3);",
-      "});"
-    ]
+    "body": ["it('SHOULD $1', () => {", "  expect($2).toEqual($3);", "});"]
   },
   "spy": {
     "prefix": "spy",
@@ -257,22 +211,11 @@
   },
   "state": {
     "prefix": "state",
-    "body": [
-      "let state;",
-      "beforeEach(() => (state = {}));",
-      "",
-      "$0;"
-    ]
+    "body": ["let state;", "beforeEach(() => (state = {}));", "", "$0;"]
   },
   "state1": {
     "prefix": "state1",
-    "body": [
-      "let $1, state;",
-      "beforeEach(() => ($1 = '{$1}'));",
-      "beforeEach(() => (state = { $1 }));",
-      "",
-      "$0;"
-    ]
+    "body": ["let $1, state;", "beforeEach(() => ($1 = '{$1}'));", "beforeEach(() => (state = { $1 }));", "", "$0;"]
   },
   "state2": {
     "prefix": "state2",

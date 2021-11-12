@@ -13,9 +13,9 @@
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": true,
   "files.watcherExclude": {
+    "**/.ammonite": true,
     "**/.bloop": true,
     "**/.metals": true,
-    "**/.ammonite": true,
     "**/target": true
   },
   "gitlens.advanced.telemetry.enabled": false,
@@ -31,8 +31,8 @@
   "vetur.format.defaultFormatter.html": "prettier",
   "window.zoomLevel": 0,
   "window.menuBarVisibility": "visible",
-  "workbench.iconTheme": "file-icons",
   "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "file-icons",
   "workbench.startupEditor": "newUntitledFile",
   "yaml.customTags": [
     "!And",
