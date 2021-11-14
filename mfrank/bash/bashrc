@@ -29,6 +29,7 @@ alias watch="npm run app:watch"
 alias killnode="taskkill -F -IM node.exe"
 alias sam="'/c/Program Files/Amazon/AWSSAMCLI/bin/sam.cmd'"
 
+alias adp="cd ~/projects/auth-delphi-pythia"
 alias api="cd ~/projects/expense-app-api"
 alias aw="cd ~/projects/app-website"
 alias da="cd ~/projects/delphi-api"
@@ -39,34 +40,9 @@ alias ea="cd ~/projects/vue-expense-app"
 alias eapi="cd ~/projects/expense-app-api"
 alias gifbot="cd ~/projects/lambda-gifbot"
 alias insultbot="cd ~/projects/lambda-insultbot"
-alias login="cd ~/projects/auth-delphi-pythia"
 alias memebot="cd ~/projects/lambda-memebot"
 alias pa="cd ~/projects/pythia-api"
 alias pythia="cd ~/projects/app-pythia"
 alias mysterio="cd ~/projects/mysterio"
 alias website="cd ~/projects/app-website"
 alias wapi="cd ~/projects/website-api"
-
-# ----------
-# Git Aliases
-# ----------
-alias ga='git add'
-alias gb='git branch'
-alias gbd='git branch -d '
-alias gc='git commit'
-alias gcm='git commit -m'
-alias gco='git checkout'
-alias gcob='git checkout -b'
-alias gcom='git checkout master'
-alias gd='git diff'
-alias gl='git log'
-alias glg='git log --graph --oneline --decorate --all'
-alias gld='git log --pretty=format:"%h %ad %s" --date=short --all'
-alias gm='git merge --no-ff'
-alias gp='git pull'
-alias gs='git status'
-alias gss='git status -s'
-alias gst='git stash'
-alias gstl='git stash list'
-alias gstp='git stash pop'
-alias gstd='git stash drop'
