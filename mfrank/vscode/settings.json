@@ -12,15 +12,8 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": true,
-  "files.watcherExclude": {
-    "**/.ammonite": true,
-    "**/.bloop": true,
-    "**/.metals": true,
-    "**/target": true
-  },
   "gitlens.advanced.telemetry.enabled": false,
   "json.schemas": [],
-  "metals.javaHome": "C:\\Users\\mfran\\.jabba\\jdk\\adopt@1.11.0-11",
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "redhat.telemetry.enabled": false,

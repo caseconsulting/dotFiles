@@ -1,12 +1,6 @@
 {
   "folders": [
     {
-      "path": "..\\..\\..\\metals"
-    },
-    {
-      "path": "..\\..\\..\\scala-at-light-speed"
-    },
-    {
       "path": "..\\..\\..\\vue-expense-app"
     },
     {
@@ -51,10 +45,5 @@
     {
       "path": "..\\..\\..\\dotFiles"
     }
-  ],
-  "settings": {
-    "files.watcherExclude": {
-      "**/target": true
-    }
-  }
+  ]
 }
