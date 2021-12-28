@@ -1,5 +1,3 @@
-code --install-extension amazonwebservices.aws-toolkit-vscode
-code --install-extension CoenraadS.bracket-pair-colorizer-2
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
 code --install-extension esbenp.prettier-vscode
