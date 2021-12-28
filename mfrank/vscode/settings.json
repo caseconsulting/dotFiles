@@ -1,10 +1,5 @@
 {
   "atomKeymap.promptV3Features": true,
-  "aws.profile": "profile:default",
-  "aws.recentCredentials": ["default"],
-  "aws.region": ["us-east-1"],
-  "aws.samcli.location": "C:\\Program Files\\Amazon\\AWSSAMCLI\\bin\\sam.cmd",
-  "aws.telemetry": false,
   "breadcrumbs.enabled": true,
   "editor.bracketPairColorization.enabled": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
