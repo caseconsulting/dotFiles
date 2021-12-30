@@ -12,6 +12,10 @@
   //  ],
   //  "description": "Log output to console"
   // }
+  "arrow": {
+    "prefix": "arrow",
+    "body": ["() => {}"]
+  },
   "let1": {
     "prefix": "let1",
     "body": ["beforeEach(() => ($1 = '{$1}'));", "", "$0;"]
