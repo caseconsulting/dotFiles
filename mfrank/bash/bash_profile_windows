@@ -22,3 +22,6 @@ export PATH=${NODE_UTILITIES_BIN}:$PATH
 
 export DOT_USER=mfrank
 export FEATURE_USER=mfrank
+
+# MongoDB Atlas connection information
+source ~/.mongodb_env.sh
