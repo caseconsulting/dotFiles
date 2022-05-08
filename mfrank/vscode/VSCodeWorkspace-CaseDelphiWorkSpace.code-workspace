@@ -1,0 +1,25 @@
+{
+  "folders": [
+    {
+      "path": "../../../app-delphi"
+    },
+    {
+      "path": "../../../app-pythia"
+    },
+    {
+      "path": "../../../auth-delphi-pythia"
+    },
+    {
+      "path": "../../../delphi-api"
+    },
+    {
+      "path": "../../../delphi-pythia"
+    },
+    {
+      "path": "../../../pythia-api"
+    },
+    {
+      "path": "../../../dotFiles"
+    }
+  ]
+}
