@@ -25,3 +25,9 @@ export FEATURE_USER=mfrank
 
 # MongoDB Atlas connection information
 source ~/.mongodb_env.sh
+
+# pipx completions
+eval "$(register-python-argcomplete pipx)"
+
+# Load AWS credentials solely from ~/.aws/config
+export AWS_SDK_LOAD_CONFIG=1
