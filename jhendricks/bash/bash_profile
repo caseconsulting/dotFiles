@@ -1,0 +1,27 @@
+#eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+#export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
+#eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+#export PATH="/home/linuxbrew/.linuxbrew/opt/node@14/bin:$PATH"
+
+# .bash_profile
+ 
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+
+export FEATURE_USER=jhendricks
+GIT_UTILITIES=~/GitHub/rkiel/git-utilities
+export PATH=${GIT_UTILITIES}/bin:$PATH
+source ${GIT_UTILITIES}/dotfiles/git-completion.bash
+source ${GIT_UTILITIES}/dotfiles/git-prompt.sh
+source ${GIT_UTILITIES}/dotfiles/bash_profile
+
+NODE_UTILITIES=~/GitHub/rkiel/node-utilities
+export PATH=${NODE_UTILITIES}/bin:$PATH
+
+export PATH=~/.npm-global/bin:$PATH
+
+# Load AWS credentials solely from ~/.aws/config
+export AWS_SDK_LOAD_CONFIG=1

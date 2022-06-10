@@ -1,0 +1,13 @@
+# .bashrc
+ 
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+GIT_UTILITIES=~/GitHub/rkiel/git-utilities
+source ${GIT_UTILITIES}/dotfiles/bashrc
+
+NODE_UTILITIES=~/GitHub/rkiel/node-utilities
+source ${NODE_UTILITIES}/dotfiles/bashrc
+
