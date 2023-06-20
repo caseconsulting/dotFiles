@@ -1,0 +1,51 @@
+
+
+
+
+# .zshrc
+
+# Source global definitions
+if [ -f /etc/zshrc ]; then
+	. /etc/zshrc
+fi
+
+# User specific aliases and functions
+
+#export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+
+export DOT_USER=mfrank
+export FEATURE_USER=mfrank
+
+export GIT_UTILITIES=~/GitHub/rkiel/git-utilities
+source ${GIT_UTILITIES}/dotfiles/zshrc
+export NODE_UTILITIES=~/GitHub/rkiel/node-utilities
+source ${NODE_UTILITIES}/dotfiles/zshrc
+
+export SAM_CLI_TELEMETRY=0
+
+alias ll="ls -la --color=auto"
+alias npml="npm list --depth=0"
+
+alias app="npm run app:start"
+alias clean="git checkout main; git checkout master; git pull; git remote update; git remote prune origin; git gc; git branch -a"
+alias karma="npm run karma:start"
+alias status="git status; echo; echo STASH:; git stash list; echo"
+alias watch="npm run app:watch"
+
+alias adp="cd ~/projects/auth-delphi-pythia"
+alias api="cd ~/projects/expense-app-api"
+alias aw="cd ~/projects/app-website"
+alias da="cd ~/projects/delphi-api"
+alias delphi="cd ~/projects/app-delphi"
+alias dp="cd ~/projects/delphi-pythia"
+alias dot="cd ~/projects/dotFiles"
+alias ea="cd ~/projects/vue-expense-app"
+alias eapi="cd ~/projects/expense-app-api"
+alias gifbot="cd ~/projects/lambda-gifbot"
+alias insultbot="cd ~/projects/lambda-insultbot"
+alias memebot="cd ~/projects/lambda-memebot"
+alias pa="cd ~/projects/pythia-api"
+alias pythia="cd ~/projects/app-pythia"
+alias mysterio="cd ~/projects/mysterio"
+alias website="cd ~/projects/app-website"
+alias wapi="cd ~/projects/website-api"
