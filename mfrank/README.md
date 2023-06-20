@@ -4,7 +4,7 @@ To establish a new environment:
 cd ~
 ln -nfs ~/projects/dotFiles/$DOT_USER/bash/bashrc .bashrc
 ln -nfs ~/projects/dotFiles/$DOT_USER/bash/bash_profile_linux .bash_profile
-ln -nfs ~/projects/dotFiles/$DOT_USER/bash/gitconfig .gitconfig
+ln -nfs ~/projects/dotFiles/$DOT_USER/git/gitconfig .gitconfig
 
 cd ~
 ln -nfs ~/projects/dotFiles/$DOT_USER/vscode/keybindings.json ~/.config/Code/User/keybindings.json
