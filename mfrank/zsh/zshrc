@@ -41,6 +41,7 @@ alias dp="cd ~/projects/delphi-pythia"
 alias dot="cd ~/projects/dotFiles"
 alias ea="cd ~/projects/vue-expense-app"
 alias eapi="cd ~/projects/expense-app-api"
+alias genbot="cd ~/projects/lambda-genbot"
 alias gifbot="cd ~/projects/lambda-gifbot"
 alias insultbot="cd ~/projects/lambda-insultbot"
 alias memebot="cd ~/projects/lambda-memebot"
@@ -49,3 +50,7 @@ alias pythia="cd ~/projects/app-pythia"
 alias mysterio="cd ~/projects/mysterio"
 alias website="cd ~/projects/app-website"
 alias wapi="cd ~/projects/website-api"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -1,7 +1,9 @@
 {
-  "atomKeymap.promptV3Features": true,
   "breadcrumbs.enabled": true,
   "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "always"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 14,
   "editor.formatOnSave": true,
@@ -9,6 +11,7 @@
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,
   "extensions.ignoreRecommendations": true,
+  "git.openRepositoryInParentFolders": "never",
   "prettier.printWidth": 120,
   "prettier.singleQuote": true,
   "redhat.telemetry.enabled": false,
@@ -16,10 +19,30 @@
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
-  "vetur.format.defaultFormatter.html": "prettier",
-  "window.menuBarVisibility": "visible",
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  // Custom tags for the parser to use
+  "yaml.customTags": [
+    "!And",
+    "!If",
+    "!Not",
+    "!Equals",
+    "!Or",
+    "!FindInMap sequence",
+    "!Base64",
+    "!Cidr",
+    "!Ref",
+    "!Sub",
+    "!GetAtt",
+    "!GetAZs",
+    "!ImportValue",
+    "!Select",
+    "!Select sequence",
+    "!Split",
+    "!Join sequence"
+  ],
+  // Enable/disable default YAML formatter (requires restart)
+  "yaml.format.enable": true
 }
